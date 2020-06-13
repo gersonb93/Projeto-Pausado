@@ -1,4 +1,4 @@
-package curso.api.rest;
+package api.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
-@EntityScan(basePackages = {"curso.api.rest.model"})
-@ComponentScan(basePackages = {"curso.*"})
-@EnableJpaRepositories(basePackages = {"curso.api.rest.repository"})
+@EntityScan(basePackages = {"api.rest.model"})
+@ComponentScan(basePackages = {"api.*"})
+@EnableJpaRepositories(basePackages = {"api.rest.repository"})
 @EnableTransactionManagement
 @EnableWebMvc
 @RestController
 @EnableAutoConfiguration
-public class CursospringrestapiApplication {
+public class springrestapiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CursospringrestapiApplication.class, args);
+		SpringApplication.run(springrestapiApplication.class, args);
 	}
 
 }
